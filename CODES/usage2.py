@@ -1,7 +1,7 @@
 from vehicle_simulation_module import VehicleSimulation
 from datetime import datetime
 
-shapefile_path = r'D:\intel\mergedroad_part\mergedroad.shx'
+shapefile_path = r'Datasets/Roads-Shapefiles/Combined/mergedroad.shx'
 simulation = VehicleSimulation(shapefile_path)
 
 num_heavy = 12
