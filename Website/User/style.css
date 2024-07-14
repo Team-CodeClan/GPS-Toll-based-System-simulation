@@ -1,0 +1,481 @@
+
+
+/* Reset and basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navigation styling */
+nav {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: all 0.3s ease;
+}
+
+nav ul li a.disabled {
+    color: #999;
+    pointer-events: none;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #0056b3;
+    color: #fff;
+    position: relative;
+}
+
+
+header h1 {
+    margin: 20px 0 0;
+    font-size: 3em;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #ccc;
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+/* Main content styling */
+.main-content {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+/* Content sections styling */
+.content-section {
+    margin-bottom: 20px;
+}
+
+.content-section h2 {
+    font-size: 2em;
+    color: #333;
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.content-section p, .content-section ul {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #666;
+}
+
+.content-section ul {
+    list-style: disc inside;
+}
+
+.content-section ul li {
+    margin-bottom: 10px;
+}
+
+/* Flex container for profile and journey details */
+.profile-journey {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.user-profile, #registerForm, #statusContent {
+    background: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 48%;
+}
+
+/* Form and user profile styling */
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form input[type="submit"] {
+    background: #0056b3;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background: #004080;
+}
+/* Journey details table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th,
+table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+/* Adjust visibility and styling based on JavaScript interactions */
+#userProfile.active,
+#statusContent.active,
+#aboutusContent.active, {
+    display: block; /* Display user profile, status content, and key features when active */
+}
+
+/* Ensure proper tab styling and functionality */
+#statusTab,
+#aboutusTab {
+    cursor: pointer;
+}
+
+#statusTab.disabled,
+#aboutusTab.disabled {
+    pointer-events: none; /* Disable tab interaction if disabled */
+    opacity: 0.6; /* Reduce opacity for disabled state */
+}
+#statusTab.active,
+#aboutusTab.active {
+    color: #0056b3; /* Active tab color */
+    font-weight: bold; /* Active tab font weight */
+}
+#registerForm, #loginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-top: 20px;
+    max-width: 400px;
+    width: 100%;
+}
+
+#registerFormElem, #loginFormElem {
+    width: 100%;
+}
+#userProfile {
+    display: flex;
+    justify-content: flex-start;
+    background: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-top: 20px;
+    max-width: 400px;
+    width: 100%;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+#userProfile p {
+    margin: 10px 0;
+}
+
+#statusContent {
+    background: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-top: 20px;
+    max-width: 400px;
+    width: 100%;
+    margin-bottom: auto;
+}
+
+
+#statusContent h2 {
+    font-size: 2em; /* Adjusted font size */
+    color: #0056b3;
+    margin-bottom: 10px;
+}
+#aboutusContent {
+    background: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-top: 20px;
+    max-width: 800px; /* Adjust as per your design */
+    width: 100%;
+}
+
+#aboutusContent h2 {
+    font-size: 2em;
+    color: #0056b3;
+    margin-bottom: 10px;
+}
+
+#aboutusContent p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #666;
+}
+
+#aboutusContent ul {
+    list-style: disc inside;
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #666;
+}
+
+#aboutusContent ul li {
+    margin-bottom: 10px;
+}
+/* Navbar integration */
+#container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+#navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#navbar ul li {
+    float: left;
+}
+
+#navbar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    background-color: #575757;
+}
+
+#content {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.tab {
+    display: none;
+}
+
+.tab h2 {
+    color: #333;
+}
+
+.tab p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.tab ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.tab ul li {
+    color: #666;
+    line-height: 1.6;
+}
+
+#about img {
+    display: block;
+    margin: 20px auto;
+}
+
+#about ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#about ul li {
+    background: #e7f3ff;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #d4e6fc;
+    border-radius: 5px;
+}
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 4px 0;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+footer p {
+    margin: 5px 0;
+}
+
+.team-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.team-links li {
+    display: inline;
+}
+
+.team-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.team-links a:hover {
+    color: #0077b5; /* LinkedIn blue */
+}
+/* Container for the Plot button */
+#plotButtonContainer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Plot button styles */
+#plotButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#plotButton:hover {
+    background-color: #0056b3;
+}
+
+/* Container for the map */
+#mapContainer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    height: 400px; /* Adjust height as needed */
+}
+#paymentContainer {
+    margin-top: 20px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#payButton {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+#payButton:hover {
+    background-color: #0056b3;
+}
+
+#qrCodeContainer {
+    text-align: center;
+    margin-top: 20px;
+    max-width: 150px; /* Reduce the max width to make the container narrower */
+    margin: 0 auto; /* Center the container */
+}
+#qrCodeContainer img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    width: 120px; /* Adjust the width of the QR code image accordingly */
+}
+/* Cubes Hosting */
+.ch-container {
+    display: flex;
+}
+
+.ch-element {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #000;
+    margin: 5px;
+}
+
+.ch-link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.ch-link:hover {
+    color: #3aaa4f;
+}
