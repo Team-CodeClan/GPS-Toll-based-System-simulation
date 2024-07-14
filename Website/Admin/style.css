@@ -1,0 +1,288 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background: #2c3e50;
+    color: #ecf0f1;
+    padding: 30px 0;
+    text-align: center;
+    border-bottom: 5px solid #e74c3c;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+nav {
+    background: #34495e;
+    overflow: hidden;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 10px 15px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #e74c3c;
+    border-radius: 5px;
+}
+
+#homeContent {
+    background: #fff;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+h2, h3 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+form label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+form input {
+    padding: 10px;
+    width: 250px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+form button {
+    padding: 10px 20px;
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s ease;
+    margin-top: 20px;
+}
+
+form button:hover {
+    background: #c0392b;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #34495e;
+    color: white;
+}
+
+td {
+    background: #ecf0f1;
+}
+
+footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    border-top: 5px solid #e74c3c;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer .team-links {
+    list-style: none;
+    padding: 0;
+}
+
+footer .team-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer .team-links a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .team-links a:hover {
+    color: #e74c3c;
+}
+
+/* Admin Interface Styles */
+#adminInterface {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#adminInterface h2 {
+    color: #34495e;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+#userTable th, #userTable td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+#userTable th {
+    background-color: #34495e;
+    color: #fff;
+}
+
+#userTable td {
+    background-color: #ecf0f1;
+}
+
+#adminSearchForm {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#adminSearchForm label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#adminSearchForm input {
+    padding: 10px;
+    width: 200px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#adminSearchForm button {
+    padding: 10px 20px;
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s ease;
+}
+
+#adminSearchForm button:hover {
+    background: #c0392b;
+}
+
+#journeyDetails {
+    margin-top: 30px;
+}
+
+#journeyDetails h3 {
+    color: #34495e;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+#journeyDetails table th, #journeyDetails table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+#journeyDetails table th {
+    background-color: #34495e;
+    color: #fff;
+}
+
+#journeyDetails table td {
+    background-color: #ecf0f1;
+}
+
+#journeyDetails h4 {
+    color: #34495e;
+    font-size: 1.3em;
+    margin-top: 20px;
+}
+
+#journeyDetails p {
+    font-size: 1.1em;
+    color: #34495e;
+    margin: 10px 0;
+}
+
+/* Cubes Hosting */
+.ch-container {
+    display: flex;
+}
+
+.ch-element {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #000;
+    margin: 5px;
+}
+
+.ch-link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.ch-link:hover {
+    color: #3aaa4f;
+}

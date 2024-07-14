@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPS Based Toll Collection</title>
+    <link rel="stylesheet" href="adstyle.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#" id="homeTab">Home</a></li>
+                <li><a href="#" id="loginTab">Login/Register</a></li>
+            </ul>
+        </nav>
+        <header>
+            <h1>GPS BASED TOLL COLLECTION</h1>
+            <p>A test model created for calculating the fees according to the distance travelled.</p>
+        </header>
+             <div id="homeContent" style="display:none;">
+                    <div id="adminInterface" style="display:none;">
+                        <h2>Admin Interface</h2>
+                        <table id="userTable" border="1">
+                            <thead>
+                                <tr>
+                                    <th>User ID</th>
+                                    <th>Vehicle ID</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                        <form id="adminSearchForm">
+                            <label for="searchVehicleId">Enter Vehicle ID:</label>
+                            <input type="text" id="searchVehicleId" required>
+                            <button type="submit" action="#" method="POST">Search</button>
+                        </form>
+                    </div>
+                    <div id="journeyDetails" style="display:none;">
+                        <h3>Journey Details</h3>
+                        <table border="1">
+                            <thead>
+                                <tr>
+                                    <th>Journey</th>
+                                    <th>Distance (m)</th>
+                                    <th>Fees (Rs)</th>
+                                </tr>
+                            </thead>
+                            <tbody id="journeyTableBody">
+                                 <tr>
+                                    <td>Journey 1</td>
+                                    <td id="j1-distance">--</td>
+                                    <td id="j1-fees">--</td>
+                                </tr>
+                                <tr>
+                                    <td>Journey 2</td>
+                                    <td id="j2-distance">--</td>
+                                    <td id="j2-fees">--</td>
+                                </tr>
+                                <tr>
+                                    <td>Journey 3</td>
+                                    <td id="j3-distance">--</td>
+                                    <td id="j3-fees">--</td>
+                                </tr>
+                                <tr>
+                                    <td>Journey 4</td>
+                                    <td id="j4-distance">--</td>
+                                    <td id="j4-fees">--</td>
+                                </tr>
+                                <tr>
+                                    <td>Journey 5</td>
+                                    <td id="j5-distance">--</td>
+                                    <td id="j5-fees">--</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h4>Total Summary</h4>
+                        <p>Total Distance: <span id="totalDistance"></span></p>
+                        <p>Total Toll: <span id="totalToll"></span></p>
+                    </div>
+                </div>
+            <div id="adminLogin">
+                <h2>Admin Login</h2>
+                <form id="adminLoginForm">
+                    <label for="adminUsername">Username:</label>
+                    <input type="text" id="adminUsername" required>
+                    <label for="adminPassword">Password:</label>
+                    <input type="password" id="adminPassword" required>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2024 GPS Based Toll Collection System. All rights reserved. Powered by <a class="ch-link" href="https://cubes.host/" target="_blank">Cubes Hosting</a></p>
+            <ul class="team-links">
+                <li><a href="https://www.linkedin.com/in/muhammed-anees-18b225318/" target="_blank">Muhammed Anees</a></li>
+                <li><a href="https://www.linkedin.com/in/mathews-reji-9870b0290/" target="_blank">Mathews Reji</a></li>
+                <li><a href="https://www.linkedin.com/in/navya-prasad-009a25298/" target="_blank">Navya Prasad</a></li>
+                <li><a href="https://www.linkedin.com/in/ishalinat/" target="_blank">Shalin Ann Thomas</a></li>
+                <li><a href="https://www.linkedin.com/in/neeraja-s-898522255/" target="_blank">Neeraja S</a></li>
+            </ul>
+        </footer>
+    </div>
+    <script src="adinterface.js"></script>
+</body>
+</html>
+    
