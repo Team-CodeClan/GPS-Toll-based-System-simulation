@@ -157,10 +157,10 @@ class Vehicle:
         self.simulation.results.extend(self.segments)
 
 if __name__ == "__main__":
-    csv_path = r'D:\intel\datasets\sim_fina\26_06_simrun_pt4.csv'
-    road_shapefile = r'D:\intel\mergedroad_part\mergedroad.shx'
-    mainroad_shapefile = r'D:\intel\mainroad_part\mainroads_part1.shx'
-    output_csv_path = r'26_06_simout_pt7.csv'
+    csv_path = r'Datasets/GPS_input_simulation.zip'#too big so path of zip given change while running with actual path
+    road_shapefile = r'Datasets/Roads-Shapefiles/Combined/mergedroad.shx'
+    mainroad_shapefile = r'Datasets/Roads-Shapefiles/Highways/mainroads_part1.shx'
+    output_csv_path = r'Datasets/simulated_output.csv'
 
     simulation = VehicleSimulation(csv_path, road_shapefile, mainroad_shapefile, output_csv_path)
     simulation.load_data()
