@@ -113,7 +113,7 @@ class VehicleSimulation:
         return df
 
 if __name__ == "__main__":
-    shapefile_path = r'D:\intel\mergedroad_part\mergedroad.shx'
+    shapefile_path = r'Datasets/Roads-Shapefiles/Combined/mergedroad.shx'
     simulation = VehicleSimulation(shapefile_path)
 
     print(simulation.gdf.head())
