@@ -129,6 +129,6 @@ if __name__ == "__main__":
     vehicle_data = simulation.simulate_vehicle_movement(num_heavy, num_two_wheeler, num_medium, num_special, num_steps, max_speed_kmph, start_time)
     print(vehicle_data.head())
     
-    output_path = 'simulated_vehicle_paths_hour_org_org.csv'
+    output_path = 'GPS_input_simulation.csv'
     vehicle_data.to_csv(output_path, index=False)
     print(f"Simulated vehicle paths saved to {output_path}")
