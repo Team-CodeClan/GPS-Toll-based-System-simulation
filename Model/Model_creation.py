@@ -6,7 +6,7 @@ import time
 import joblib
 
 # Load your dataset
-df = pd.read_csv(r'C:\Users\mathe\Documents\Intel Industrial Training\App Deployment\06_07_latlong.csv')
+df = pd.read_csv(r'Datasets/simulated_output.csv')
 
 # Convert start_time and end_time to datetime objects
 df['start_time'] = pd.to_datetime(df['start_time'], format='%d-%m-%Y %H:%M', errors='coerce')
@@ -63,4 +63,4 @@ r2 = r2_score(y_test, predictions)
 print(f"Mean Squared Error: {mse}")
 print(f"R^2 Score: {r2}")
 
-#joblib.dump(model, "06_07_lgbm_model.sav")
+joblib.dump(model, "Model.sav")
