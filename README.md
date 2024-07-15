@@ -3,7 +3,7 @@ GPS-based toll calculation is a system that uses Global Positioning System (GPS)
 
 
 ### User Website  
-  [gps-toll.cubeshosting.com](https://gps-toll.cubeshosting.com/#)  
+  [gps-toll.com](https://gps-toll.cubeshosting.com/#)  
 Use [login-credentials](https://github.com/Team-CodeClan/GPS-Toll-based-System-simulation/blob/b09ed4a3822a7a4e263cebd9b1e929c7d12f1398/Website/User/login.csv) to access the website  
 
 
