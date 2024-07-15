@@ -8,7 +8,8 @@ Use [login-credentials](https://github.com/Team-CodeClan/GPS-Toll-based-System-s
 
 
 ### Admin Website
-[gps-toll.admin](https://gps-toll.cubeshosting.com/admin/#) 
+[gps-toll.admin](https://gps-toll.cubeshosting.com/admin/#)  
+use [admin-details](https://github.com/Team-CodeClan/GPS-Toll-based-System-simulation/blob/bb6d83eb3f97effdeabd1ea3ffafc8df4f1cedeb/Website/Admin/README.md)
 
 
 
