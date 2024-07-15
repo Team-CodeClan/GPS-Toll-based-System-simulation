@@ -15,4 +15,4 @@ use [admin-details](https://github.com/Team-CodeClan/GPS-Toll-based-System-simul
 
 
 
-This project was done by [Muhammed Anees](https://github.com/MuhammedAnees-loony),[Mathews Reji](https://github.com/Mathews-Reji),  [Navya Prasad](https://github.com/navya484), [Neeraja S] and [Shalin Ann Thomas](https://github.com/Shalin-01)
+This project was done by [Muhammed Anees](https://github.com/MuhammedAnees-loony), [Mathews Reji](https://github.com/Mathews-Reji),  [Navya Prasad](https://github.com/navya484), [Neeraja S] and [Shalin Ann Thomas](https://github.com/Shalin-01)
