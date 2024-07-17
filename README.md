@@ -6,7 +6,7 @@ The project aims to demonstrate the feasibility and advantages of a GPS-based to
 
 ### User Website  
 &#x1F30F;[gps-toll.user.com](https://gps-toll.cubeshosting.com/#)  
-Use [login-credentials](https://github.com/Team-CodeClan/GPS-Toll-based-System-simulation/blob/b09ed4a3822a7a4e263cebd9b1e929c7d12f1398/Website/User/login.csv) to access the website.  
+use [login-credentials](https://github.com/Team-CodeClan/GPS-Toll-based-System-simulation/blob/b09ed4a3822a7a4e263cebd9b1e929c7d12f1398/Website/User/login.csv) to access the website.  
 
 
 ### Admin Website
